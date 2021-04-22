@@ -45,12 +45,11 @@ def handle_message(event):
             package_id='1',
             sticker_id='1'
         )
-
-    line_bot_api.reply_message(
-        event.reply_token,
-        sticker_msg
-    )
-    return
+        line_bot_api.reply_message(
+            event.reply_token,
+            sticker_msg
+        )
+        return
 
     if msg in ['Hi', 'hi']:
         r = 'Hello'
